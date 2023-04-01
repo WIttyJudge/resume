@@ -9,7 +9,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    # container: texlive/texlive:latest
+    container: texlive/texlive:latest
 
     steps:
     - name: Checkout repo
@@ -18,15 +18,11 @@ jobs:
     - name: Generate PDF files
       run: make
 
-    # - name: Push changes
-    #   uses: stefanzweifel/git-auto-commit-action@v4
-    #   with:
-    #     commit_message: "chore(build): auto-generate pdf files"
-    #     commit_user_name: "github-actions[bot]"
-    #     commit_user_email: "github-actions[bot]@users.noreply.github.com"
-    #     commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
-
-    - name: Push files
+    - name: Push changes
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit_message: "Auto-commit changes"
+        commit_message: "chore(build): auto-generate pdf files"
+        commit_user_name: "github-actions[bot]"
+        commit_user_email: "github-actions[bot]@users.noreply.github.com"
+        commit_author: "github-actions[bot] <github-actions[bot]@users.noreply.github.com>"
+
