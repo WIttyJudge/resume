@@ -21,12 +21,15 @@
 \documentclass[11pt, a4paper]{awesome-cv}
 
 % Configure page margins with geometry
-\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+\geometry{left=1.4cm, top=0.5cm, right=1.4cm, bottom=0.5cm, footskip=0cm}
+
+% Specify the location of the included fonts
+\fontdir[fonts/]
 
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
-\colorlet{awesome}{awesome-red}
+\colorlet{awesome}{awesome-nephritis}
 % Uncomment if you would like to specify your own color
 % \definecolor{awesome}{HTML}{CA63A8}
 
@@ -50,17 +53,17 @@
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-% \photo{./examples/profile.png}
-\name{2312312}{Park}
-\position{Site Reliability Engineer{\enskip\cdotp\enskip}Software Architect}
-\address{235, World Cup buk-ro, Mapo-gu, Seoul, 03936, Republic of Korea}
+% \photo[rectangle,edge,right]{./examples/profile}
+\name{Ruslan}{Kondratiuk}
+\position{Backend engineer} %{\enskip\cdotp\enskip}Security Expert}
+% \address{42-8, Bangbae-ro 15-gil, Seocho-gu, Seoul, 00681, Rep. of KOREA}
 
-\mobile{(+82) 10-9030-1843}
-\email{posquit0.bj@gmail.com}
+% \mobile{(+82) 10-9030-1843}
+\email{ruslan.kondratyuk.dev@gmail.com}
 %\dateofbirth{January 1st, 1970}
-\homepage{www.posquit0.com}
-\github{posquit0}
-\linkedin{posquit0}
+% \homepage{www.posquit0.com}
+\github{wittyjudge}
+% \linkedin{posquit0}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
@@ -73,37 +76,36 @@
 % \googlescholar{googlescholar-id}{}
 % \extrainfo{extra information}
 
-\quote{``Be the change that you want to see in the world."}
-
+% \quote{``Be the change that you want to see in the world."}
 
 %-------------------------------------------------------------------------------
 \begin{document}
 
 % Print the header with above personal information
 % Give optional argument to change alignment(C: center, L: left, R: right)
-\makecvheader
+\makecvheader[C]
 
 % Print the footer with 3 arguments(<left>, <center>, <right>)
 % Leave any of these blank if they are not needed
-\makecvfooter
-  {\today}
-  {Claud D. Park~~~·~~~Curriculum Vitae}
-  {\thepage}
-
+% \makecvfooter
+%   {\today}
+%   {Byungjin Park~~~·~~~Résumé}
+%   {\thepage}
 
 %-------------------------------------------------------------------------------
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-\input{components/education.tex}
+\input{components/aboutme.tex}
 \input{components/skills.tex}
 \input{components/experience.tex}
-\input{components/extracurricular.tex}
-\input{components/honors.tex}
+% \input{components/extracurricular.tex}
+% \input{components/honors.tex}
 \input{components/certificates.tex}
-\input{components/presentation.tex}
-\input{components/writing.tex}
-\input{components/committees.tex}
+\input{components/education.tex}
+% \input{components/presentation.tex}
+% \input{components/writing.tex}
+% \input{components/committees.tex}
 
 
 %-------------------------------------------------------------------------------

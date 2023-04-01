@@ -23,11 +23,6 @@ jobs:
     - name: Generate PDF files
       run: make
 
-    - name: Test
-      run: | 
-        ls
-        git status
-
     - name: Push changes
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
