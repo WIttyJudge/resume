@@ -1,0 +1,5 @@
+#!/bin/sh
+
+# fd and entr is required
+
+fd ".tex" | entr make
