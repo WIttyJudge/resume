@@ -1,1 +1,1 @@
-![CV jpg format](cv.jpg)
+![CV avif format](cv.avif)
