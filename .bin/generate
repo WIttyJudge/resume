@@ -1,0 +1,25 @@
+#!/usr/bin/env sh
+
+# FUNCTIONS
+
+generate_jpg() {
+  convert -verbose -density 300 cv.pdf -quality 90 cv.jpg
+}
+
+generate_avif() {
+  avifenc cv.jpg -o cv.avif
+}
+
+# EXECUTION
+
+echo -e "\nRunning make.."
+make
+
+echo -e "\nGenerate JPG"
+generate_jpg
+
+echo -e "\nGenerate AVIF"
+generate_avif
+
+echo
+rm -fv cv.jpg
